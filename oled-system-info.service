@@ -1,0 +1,11 @@
+[Unit] 
+Description=oled-system-info 
+After=basic.service 
+ 
+[Service] 
+Type=simple 
+ExecStart=/usr/bin/oled_system_info 
+Restart=always
+ 
+[Install] 
+WantedBy=multi-user.target
